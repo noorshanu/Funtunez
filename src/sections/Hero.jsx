@@ -7,7 +7,7 @@ function Hero() {
     <section className=" mt-8 relative ">
       <img src="images/ring.png" alt=""  className=" h-full sm:h-[800px] absolute left-0 -top-[35%]"/>
       <div className=" max-w-[1250px] mx-auto relative z-20">
-        <div className=" flex justify-between items-center">
+        <div className=" flex justify-between flex-col sm:flex-row items-center">
           <div className=" text-white">
             <h1 className=" font-work font-bold text-5xl max-w-2xl ">
             Welcome to  <span className="text-grad font-64 text-4xl ">   FanTunez</span>   and FanCon: Your Gateway to Immersive
