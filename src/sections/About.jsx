@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="bg-secondary  py-12">
       <div className="container-wrapper ">
-        <div className=" flex justify-between gap-4">
+        <div className=" flex flex-col sm:flex-row justify-between gap-4">
           <div className="nft border-[#112411] border p-4 relative bg-grad">
             <img
               src="images/about.jpg"
