@@ -8,7 +8,7 @@ function Collab() {
     <div className=' container-wrapper'>
         <div className=' bg-primary shadow-md p-4 rounded-lg '>
 
-        <div className=" flex justify-between gap-4">
+        <div className=" flex justify-between flex-col sm:flex-row gap-4">
           <div className="nft border-[#112411] border p-4 relative bg-grad">
             <img
               src="images/about.jpg"
