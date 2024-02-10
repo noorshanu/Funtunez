@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="bg-secondary  py-12">
       <div className="container-wrapper ">
-        <div className=" flex flex-col sm:flex-row justify-between gap-4">
+        <div className=" flex flex-col sm:flex-row justify-between gap-4 items-center">
           <div className="nft border-[#112411] border p-4 relative bg-grad">
             <img
               src="images/about.jpg"
@@ -14,22 +14,25 @@ function About() {
           </div>
           <div className=" max-w-xl ">
             <div className=" my-3">
-              <h1 className="text-grad text-4xl font-work font-bold font-64">
-                About US{" "}
+              <h1 className="text-grad text-4xl font-work font-bold font-64 uppercase">
+                Our Vision{" "}
               </h1>
-              <div className="bg-white h-[3px] w-[300px] my-2"> </div>
+              <div className="bg-white h-[3px] w-[359px] my-2"> </div>
             </div>
             <p className=" text-white text-lg">
-              Welcome to FanTunez, a dynamic ecosystem designed to power the
-              creator economy. We're on a mission to provide a unique platform
-              where creators can monetize their art and connect with fans
-              through immersive metaverse experiences, exclusive NFTs, events,
-              and merchandise.
+              Revolutionizing the interaction between creators and fans. At
+              FanTunez, we are building a dynamic ecosystem with an EVM
+              blockchain to empower the creator economy. Our mission is to
+              provide a unique space where creators can not only monetize their
+              art but also engage with fans through immersive, gamified VR/AR
+              experiences, exclusive FanTokens, events, and merchandise.
             </p>
             <p className="text-white text-lg py-4">
-              We believe in the trans-formative power of the creator economy,
-              and we're committed to fostering a space where creators and fans
-              can interact in meaningful ways.
+              We believe in the transformative power of the creator economy and
+              are committed to providing a space where creators can connect with
+              their fans in meaningful ways. At FanTunez, we are leading the
+              #create2earn and #engage2earn revolution, reimagining the future
+              of creative engagement.
             </p>
 
             <div>

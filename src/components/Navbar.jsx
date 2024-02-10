@@ -8,30 +8,50 @@ function Navbar() {
   return (
     <>
       <nav className="z-[100] bg-secondary lg:bg-transparent">
-        <div className=" max-w-[1250px] mx-auto bg-secondary border-[0.5px] border-[#07c301] h-14 lg:h-16 2xl:h-20 rounded-2xl flex justify-between lg:justify-normal lg:grid lg:grid-cols-[1fr_16rem_1fr] gap-8 items-center">
-          <div className="items-center justify-evenly text-base font-medium text-white hidden lg:flex">
+        <div className=" max-w-[1250px] mx-auto bg-secondary border-[0.5px] border-[#07c301] h-14 lg:h-16 2xl:h-20 rounded-2xl flex justify-between lg:justify-between  gap-8 items-center px-4">
+          <div>
+            <img
+              src="/images/logo.png"
+              className="w-auto h-[20px]  sm:h-[29px] "
+              alt=""
+            />
+          </div>
+          <div className="items-center justify-between gap-8 text-base font-medium text-white hidden lg:flex">
             <Link
               to="contact"
               onClick={() => setSidebarOpen(false)}
               className="cursor-pointer text-sm xl:text-base"
             >
-              Contact Us
+              Home
             </Link>
             <Link
               to="roadmap"
               onClick={() => setSidebarOpen(false)}
               className="cursor-pointer text-sm xl:text-base"
             >
-              Roadmap
+             Ecosystem
             </Link>
-          </div>
-
-          <div>
-            <img
-              src="/images/logo.png"
-              className="w-full max-w-[11rem] lg:max-w-none"
-              alt=""
-            />
+            <Link
+              to="about"
+              onClick={() => setSidebarOpen(false)}
+              className="cursor-pointer text-sm xl:text-base"
+            >
+           Creators
+            </Link>
+            <Link
+              to="tokenomics"
+              onClick={() => setSidebarOpen(false)}
+              className="cursor-pointer text-sm xl:text-base"
+            >
+            Fans
+            </Link>
+            <Link
+              to="tokenomics"
+              onClick={() => setSidebarOpen(false)}
+              className="cursor-pointer text-sm xl:text-base"
+            >
+            Telegram
+            </Link>
           </div>
 
           <button
@@ -40,23 +60,6 @@ function Navbar() {
           >
             <IoMenu />
           </button>
-
-          <div className="items-center justify-evenly text-base font-medium text-white hidden lg:flex">
-            <Link
-              to="about"
-              onClick={() => setSidebarOpen(false)}
-              className="cursor-pointer text-sm xl:text-base"
-            >
-              About Us
-            </Link>
-            <Link
-              to="tokenomics"
-              onClick={() => setSidebarOpen(false)}
-              className="cursor-pointer text-sm xl:text-base"
-            >
-              Tokenomics
-            </Link>
-          </div>
         </div>
       </nav>
 
@@ -76,7 +79,7 @@ function Navbar() {
           </button>
         </div>
 
-        <div className="space-y-5 flex flex-col text-left items-start text-black font-medium">
+        <div className="space-y-5 flex flex-col text-left items-start text-white font-medium">
           <Link
             to="contact"
             onClick={() => setSidebarOpen(false)}
