@@ -15,7 +15,7 @@ function Collab() {
               <h1 className="text-grad text-4xl font-work font-bold font-64">
               For Creators
               </h1>
-              <div className="bg-white h-[3px] w-[430px] my-2"> </div>
+              <div className="bg-white h-[3px] w-[200px] sm:w-[430px] my-2"> </div>
             </div>
             <p className=" text-white text-lg">
             we mention about what we do for creators. Here we will mention about #create2earn as well
@@ -50,7 +50,7 @@ function Collab() {
             <img
               src="images/creat.jpg"
               alt=""
-              className=" rounded-2xl relative z-[100] h-[400px] "
+              className=" rounded-2xl relative z-[100] h-auto sm:h-[400px] "
             />
           </div>
         </div>

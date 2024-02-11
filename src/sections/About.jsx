@@ -9,15 +9,15 @@ function About() {
             <img
               src="images/about.jpg"
               alt=""
-              className=" rounded-2xl relative z-[100] h-[400px] "
+              className=" rounded-2xl relative z-[100] h-auto sm:h-[400px] "
             />
           </div>
           <div className=" max-w-xl ">
             <div className=" my-3">
-              <h1 className="text-grad text-4xl font-work font-bold font-64 uppercase">
+              <h1 className="text-grad text-2xl sm:text-4xl font-work font-bold font-64 uppercase">
                 Our Vision{" "}
               </h1>
-              <div className="bg-white h-[3px] w-[359px] my-2"> </div>
+              <div className="bg-white h-[3px] w-[240px] sm:w-[359px] my-2"> </div>
             </div>
             <p className=" text-white text-lg">
               Revolutionizing the interaction between creators and fans. At

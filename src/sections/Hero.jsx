@@ -24,7 +24,7 @@ function Hero() {
           </div>
 
           <div>
-            <img src="images/hero-bg.png" alt="" className=" h-[500px]" />
+            <img src="images/hero-bg.png" alt="" className=" h-auto sm:h-[500px]" />
           </div>
         </div>
       </div>
