@@ -6,6 +6,7 @@ import Collab from "./sections/Collab";
 import Features from "./sections/Features";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
+import LatestNews from "./sections/LatestNews";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
 
         <div className=" my-4">
          <Cta/>
+        </div>
+        <div className=" my-4">
+         <LatestNews/>
         </div>
 
         <div className=" mt-8">
