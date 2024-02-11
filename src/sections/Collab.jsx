@@ -6,9 +6,9 @@ function Collab() {
 
 
     <div className=' container-wrapper'>
-        <div className=' bg-primary shadow-md p-4 rounded-lg '>
+        <div className=' bg-primary shadow-md px-5 py-12 sm:py-20 rounded-lg '>
 
-        <div className=" flex justify-between flex-col sm:flex-row gap-4">
+        <div className=" flex justify-between flex-col sm:flex-row gap-6">
       
           <div className=" max-w-xl ">
             <div className=" my-3">
@@ -46,11 +46,11 @@ function Collab() {
             <div></div>
           </div>
 
-          <div className="nft border-[#112411] border p-4 relative bg-grad">
+          <div className="nft border-[#112411] border pt-4 relative bg-grad">
             <img
-              src="images/creat.jpg"
+              src="images/create.png"
               alt=""
-              className=" rounded-2xl relative z-[100] h-auto sm:h-[400px] "
+              className=" rounded-2xl relative z-[100] h-auto  "
             />
           </div>
         </div>
