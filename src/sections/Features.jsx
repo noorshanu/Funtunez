@@ -9,14 +9,12 @@ function Features() {
       <div className="container-wrapper">
         <div className=" my-3">
           <h1 className="text-grad text-4xl font-work font-bold font-64 text-center">
-            Features
+            For Fans
           </h1>
           <div className="bg-white h-[3px] w-[300px] mx-auto my-2"> </div>
 
           <p className=" text-xl text-center text-white max-w-4xl mx-auto my-8">
-            We believe in the trans-formative power of the creator economy, and
-            we're committed to fostering a space where creators and fans can
-            interact in meaningful ways.
+          we mention here what we do for fans. Here we will mention about #engage2earn as well
           </p>
         </div>
 
