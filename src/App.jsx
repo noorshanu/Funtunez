@@ -30,11 +30,11 @@ function App() {
         <div className=" my-4">
          <Cta/>
         </div>
-        <div className=" my-4">
+        <div className=" mt-4">
          <LatestNews/>
         </div>
 
-        <div className=" mt-8">
+        <div className=" border-t">
         <Footer/>
         </div>
       </div>
