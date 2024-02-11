@@ -286,3 +286,22 @@ body {
     -0.125rem -0.125rem 1rem rgba(25, 236, 5, 0.5),
     0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 }
+
+
+.floating {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
