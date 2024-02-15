@@ -9,10 +9,10 @@ function Collab() {
       Our Features
           </h1>
           <div className="bg-white h-[3px] w-[300px] mx-auto my-2"> </div>
-        <div className=" flex justify-center ">
+        <div className=" flex justify-center flex-col sm:flex-row ">
           <div className=" ">
             <FeatureCard
-            className='w-[800px] '
+            className=' w-full sm:w-[800px] '
               IconSrc="images/sate.png"
               Title="Gamefied VR/AR experience"
               Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
@@ -20,7 +20,7 @@ function Collab() {
           </div>
           <div >
             <FeatureCard
-            className="w-[400px] "
+            className=" w-full sm:w-[400px] "
               IconSrc="images/sate.png"
               Title="Gamefied VR/AR experience"
               Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
@@ -28,10 +28,10 @@ function Collab() {
           </div>
         </div>
 
-        <div className=" flex justify-center ">
+        <div className=" flex justify-center flex-col sm:flex-row ">
         <div >
             <FeatureCard
-            className="w-[400px] h-full"
+            className=" w-full sm:w-[400px] h-full"
               IconSrc="images/sate.png"
               Title="Gamefied VR/AR experience"
               Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
@@ -39,7 +39,7 @@ function Collab() {
           </div>
           <div className=" ">
             <FeatureCard
-            className='w-[800px] h-full'
+            className=' w-full sm:w-[800px] h-full'
               IconSrc="images/sate.png"
               Title="Gamefied VR/AR experience"
               Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
@@ -47,10 +47,10 @@ function Collab() {
           </div>
     
         </div>
-        <div className=" flex justify-center ">
+        <div className=" flex justify-center flex-col sm:flex-row ">
         <div className=" ">
             <FeatureCard
-            className='w-[800px] h-full'
+            className=' w-full sm:w-[800px] h-full'
               IconSrc="images/sate.png"
               Title="Gamefied VR/AR experience"
               Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
@@ -59,7 +59,7 @@ function Collab() {
     
         <div >
             <FeatureCard
-            className="w-[400px] h-full"
+            className=" w-full sm:w-[400px] h-full"
               IconSrc="images/sate.png"
               Title="Gamefied VR/AR experience"
               Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
@@ -67,7 +67,7 @@ function Collab() {
           </div>
      
         </div>
-        <div className=" flex justify-between w-full ">
+        <div className=" flex justify-between w-full flex-col sm:flex-row ">
         <div >
             <FeatureCard
             className=" h-full"
