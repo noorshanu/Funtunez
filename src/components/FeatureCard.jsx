@@ -1,22 +1,27 @@
-import React from 'react'
+import React from "react";
 
-function FeatureCard() {
+function FeatureCard({ IconSrc, Title, Para, className }) {
   return (
-    <section>
-        <section class="flex flex-col justify-center antialiased bg-gray-50 text-gray-600  p-4">
-  <div class="h-full">
-
-    <div class="max-w-xs mx-auto">
-      <div class="relative nft  rounded-lg shadow-lg p-5 overflow-hidden border border-[#47ef47]">
-     
-        <svg class="absolute top-0 right-0" width="158" height="119" aria-hidden="true">
+    <section className={`flex flex-col justify-center antialiased bg-gray-50 text-gray-600 p-4 ${className}`}>
+      <div className="relative nft  h-[400px]  rounded-lg shadow-lg p-5 overflow-hidden border border-[#47ef47]">
+        <svg
+          class="absolute top-0 right-0"
+          width="158"
+          height="119"
+          aria-hidden="true"
+        >
           <defs>
             <linearGradient x1="50%" y1="0%" x2="50%" y2="96.22%" id="a">
               <stop stop-color="#47ef47" stop-opacity=".88" offset="0%" />
               <stop stop-color="#47ef47" stop-opacity=".24" offset="100%" />
             </linearGradient>
           </defs>
-          <g transform="translate(-719 -96)" stroke="url(#a)" fill="none" fill-rule="evenodd">
+          <g
+            transform="translate(-719 -96)"
+            stroke="url(#a)"
+            fill="none"
+            fill-rule="evenodd"
+          >
             <path d="M802.959 69.706c.987-31.014 27.104-55.35 58.333-54.356 31.23.994 55.747 26.94 54.76 57.954-.987 31.013-27.103 55.349-58.333 54.356-31.23-.994-55.747-26.94-54.76-57.954Z" />
             <path d="M859.16 15.329c32.617-.2 59.212 24.794 59.4 55.824.19 31.028-26.097 56.343-58.714 56.543-32.617.2-59.212-24.793-59.4-55.823-.19-31.03 26.097-56.346 58.714-56.544Z" />
             <path d="M857.026 15.367c34.01-1.498 62.687 22.421 64.052 53.424 1.366 31.003-25.097 57.35-59.107 58.847-34.01 1.5-62.688-22.419-64.053-53.422-1.366-31.004 25.098-57.35 59.108-58.849Z" />
@@ -63,21 +68,20 @@ function FeatureCard() {
             <path d="M859.505-70.5c78.428 0 142.005 63.578 142.005 142.005 0 78.428-63.577 142.005-142.005 142.005-78.427 0-142.005-63.577-142.005-142.005C717.5-6.922 781.078-70.5 859.505-70.5Z" />
           </g>
         </svg>
-    
-        <div class="relative pt-[6.25rem] pb-14">
-            <img src="" alt="" />
-          <div class="text-xs font-bold uppercase text-green-400 tracking-widest mb-2 text-white">Featured app</div>
-          <h3 class="text-2xl font-extrabold text-indigo-50 leading-snug mb-2 text-white">The easy way to scan your documents</h3>
-          <p class="text-indigo-200 text-white">Lorem ipsum dolor sit amet, consecte adipiscing elit sed do eiusmod.</p>
+
+        <div className="relative pb-4 ">
+          <img src={IconSrc} alt="" className=" h-[200px] w-[200px]" />
+          <div className="text-2xl font-bold uppercase text-green-400 tracking-widest mb-2 text-white pt-4">
+            {Title}
+          </div>
+          {/* <h3 class="text-2xl font-extrabold text-indigo-50 leading-snug mb-2 text-white">
+                  The easy way to scan your documents
+                </h3> */}
+          <p className="text-indigo-200 text-white text-base py-2">{Para}</p>
         </div>
-    
-      
       </div>
-    </div>
-  </div>
-</section>
     </section>
-  )
+  );
 }
 
-export default FeatureCard
+export default FeatureCard;

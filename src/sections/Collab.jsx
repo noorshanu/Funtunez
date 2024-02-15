@@ -1,66 +1,96 @@
-import React from 'react'
+import React from "react";
+import FeatureCard from "../components/FeatureCard";
 
 function Collab() {
   return (
-   <section className=' bg-secondary py-12'>
-
-
-    <div className=' container-wrapper'>
-        <div className=' bg-primary shadow-md px-5 py-12 sm:py-20 rounded-lg '>
-
-        <div className=" flex justify-between flex-col sm:flex-row gap-6">
-      
-          <div className=" max-w-xl ">
-            <div className=" my-3">
-              <h1 className="text-grad text-4xl font-work font-bold font-64">
-              For Creators
-              </h1>
-              <div className="bg-white h-[3px] w-[200px] sm:w-[430px] my-2"> </div>
-            </div>
-            <p className=" text-white text-lg">
-            we mention about what we do for creators. Here we will mention about #create2earn as well
-
-            </p>
-            <p className="text-white text-lg py-4">
-              We believe in the trans-formative power of the creator economy,
-              and we're committed to fostering a space where creators and fans
-              can interact in meaningful ways.
-            </p>
-
-            <div>
-              <div className="flex items-center gap-4 mt-5">
-                <button
-                  type="button"
-                  className="py-2 px-10    font-medium button-62 text-lg rounded-full border border-[#4d4c4c] "
-                >
-                  Explorer
-                </button>
-                <button
-                  type="button"
-                  className="py-2 px-10  text-lg font-medium   text-white underline "
-                >
-                  Lean More..
-                </button>
-              </div>
-            </div>
-            <div></div>
+    <section className=" bg-secondary py-12">
+      <div className=" container-wrapper">
+      <h1 className="text-grad text-4xl font-work font-bold font-64 text-center py-3">
+      Our Features
+          </h1>
+          <div className="bg-white h-[3px] w-[300px] mx-auto my-2"> </div>
+        <div className=" flex justify-center ">
+          <div className=" ">
+            <FeatureCard
+            className='w-[800px] '
+              IconSrc="images/sate.png"
+              Title="Gamefied VR/AR experience"
+              Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
+            />
           </div>
-
-          <div className="nft border-[#112411] border pt-4 relative bg-grad">
-            <img
-              src="images/create.png"
-              alt=""
-              className=" rounded-2xl relative z-[100] h-auto  "
+          <div >
+            <FeatureCard
+            className="w-[400px] "
+              IconSrc="images/sate.png"
+              Title="Gamefied VR/AR experience"
+              Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
             />
           </div>
         </div>
 
+        <div className=" flex justify-center ">
+        <div >
+            <FeatureCard
+            className="w-[400px] h-full"
+              IconSrc="images/sate.png"
+              Title="Gamefied VR/AR experience"
+              Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
+            />
+          </div>
+          <div className=" ">
+            <FeatureCard
+            className='w-[800px] h-full'
+              IconSrc="images/sate.png"
+              Title="Gamefied VR/AR experience"
+              Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
+            />
+          </div>
+    
         </div>
-
-    </div>
-
-   </section>
-  )
+        <div className=" flex justify-center ">
+        <div className=" ">
+            <FeatureCard
+            className='w-[800px] h-full'
+              IconSrc="images/sate.png"
+              Title="Gamefied VR/AR experience"
+              Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
+            />
+          </div>
+    
+        <div >
+            <FeatureCard
+            className="w-[400px] h-full"
+              IconSrc="images/sate.png"
+              Title="Gamefied VR/AR experience"
+              Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
+            />
+          </div>
+     
+        </div>
+        <div className=" flex justify-between w-full ">
+        <div >
+            <FeatureCard
+            className=" h-full"
+              IconSrc="images/sate.png"
+              Title="Gamefied VR/AR experience"
+              Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
+            />
+          </div>
+          <div className=" ">
+            <FeatureCard
+            className=' h-full'
+              IconSrc="images/sate.png"
+              Title="Gamefied VR/AR experience"
+              Para="Fans can interact with their favourite creators and other users in our immersive VR world, play games, and attend events."
+            />
+          </div>
+      
+       
+    
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Collab
+export default Collab;
