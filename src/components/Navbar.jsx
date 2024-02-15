@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { Link } from "react-scroll";
+import { FaTelegram } from "react-icons/fa";
 
 function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -48,8 +49,10 @@ function Navbar() {
             <Link
               to="tokenomics"
               onClick={() => setSidebarOpen(false)}
-              className="cursor-pointer text-sm xl:text-base"
+              className="cursor-pointer text-sm xl:text-base flex items-center gap-4 border border-[#47ef47] rounded-full py-2 px-5 bg-[#0d0f11]"
             >
+              <FaTelegram  className=" text-2xl" />
+
             Telegram
             </Link>
           </div>
@@ -85,29 +88,38 @@ function Navbar() {
             onClick={() => setSidebarOpen(false)}
             className="cursor-pointer text-sm xl:text-base"
           >
-            Contact Us
+             Home
           </Link>
           <Link
             to="roadmap"
             onClick={() => setSidebarOpen(false)}
             className="cursor-pointer text-sm xl:text-base"
           >
-            Roadmap
+            Ecosystem
           </Link>
           <Link
             to="about"
             onClick={() => setSidebarOpen(false)}
             className="cursor-pointer text-sm xl:text-base"
           >
-            About Us
+             Creators
           </Link>
           <Link
             to="tokenomics"
             onClick={() => setSidebarOpen(false)}
             className="cursor-pointer text-sm xl:text-base"
           >
-            Tokenomics
+          Fans
           </Link>
+          <Link
+              to="tokenomics"
+              onClick={() => setSidebarOpen(false)}
+              className="cursor-pointer text-sm xl:text-base flex items-center gap-4 border border-[#47ef47] rounded-full py-2 px-5 bg-[#0d0f11]"
+            >
+              <FaTelegram  className=" text-2xl" />
+
+            Telegram
+            </Link>
         </div>
       </div>
 
