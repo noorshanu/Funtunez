@@ -69,23 +69,24 @@ function Collab() {
           </div>
      
         </div>
-        <div className=" flex justify-between w-full flex-col sm:flex-row ">
-        <div >
+        <div className=" flex justify-center w-full flex-col sm:flex-row ">
+        <div className=" ">
             <FeatureCard
-            className=" h-full"
-              IconSrc="images/sate.png"
-              Title="Ai Creator tools"
-              Para="Fantunez provide Ai based creator studio using which creators can build a community, online store, email marketing strategy, and secure brand deals."
-            />
-          </div>
-          <div className=" ">
-            <FeatureCard
-            className=' h-full'
+            className='w-full sm:w-[500px] h-full'
               IconSrc="images/sate.png"
               Title="User Experience"
               Para="A seamless Blockchain and Dapps experience tailored for content creators and their fans for the next gen creator economy."
             />
           </div>
+        <div >
+            <FeatureCard
+            className=" w-full sm:w-[700px] h-full"
+              IconSrc="images/sate.png"
+              Title="Ai Creator tools"
+              Para="Fantunez provide Ai based creator studio using which creators can build a community, online store, email marketing strategy, and secure brand deals."
+            />
+          </div>
+       
       
        
     
