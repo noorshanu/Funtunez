@@ -305,3 +305,87 @@ body {
     transform: translate(0, -0px);
   }
 }
+
+
+.swiper {
+  margin: auto;
+
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+
+.swiper-bg {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #08050950, #1a171c, #080509af);
+  background-clip: padding-box;
+  border-radius: 45px;
+ 
+}
+
+
+.container-card {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+  border-radius: 45px;
+  padding: 40px;
+}
+
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+}
+
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+.bg-green-box::after {
+  background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+}
+
+.swiper-pagination-bullet{
+  height: 18px;
+  width: 18px;
+  background: #47ef47;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+
+.swiper-button-next , .swiper-button-prev{
+  background-color: #04181c;
+  border: 1px solid #3da077;
+  border-radius: 100px;
+  padding: 5px;
+height: 50px;
+width: 50px;
+font-size:12px ;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+  font-size:22px ;
+  color: #fff;
+}
