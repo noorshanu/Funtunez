@@ -19,8 +19,8 @@ function Features() {
           <div className="bg-white h-[3px] w-[300px] mx-auto my-2"> </div>
 
           <p className=" text-xl text-center text-white max-w-4xl mx-auto my-8">
-            we mention here what our . Here we will mention about #engage2earn
-            as well
+            we mention here what our Creators says  . Here we will mention about #Feedback
+            
           </p>
         </div>
 
