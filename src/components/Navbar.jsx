@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { FaTelegram } from "react-icons/fa";
 
 function Navbar() {
@@ -19,35 +19,35 @@ function Navbar() {
           </div>
           <div className="items-center justify-between gap-8 text-base font-medium text-white hidden lg:flex">
             <Link
-              to="contact"
+              to="/"
               onClick={() => setSidebarOpen(false)}
               className="cursor-pointer text-sm xl:text-base"
             >
               Home
             </Link>
             <Link
-              to="roadmap"
+              to="ecosystem"
               onClick={() => setSidebarOpen(false)}
               className="cursor-pointer text-sm xl:text-base"
             >
              Ecosystem
             </Link>
             <Link
-              to="about"
+              to="/"
               onClick={() => setSidebarOpen(false)}
               className="cursor-pointer text-sm xl:text-base"
             >
            Creators
             </Link>
             <Link
-              to="tokenomics"
+              to="/"
               onClick={() => setSidebarOpen(false)}
               className="cursor-pointer text-sm xl:text-base"
             >
             Fans
             </Link>
             <Link
-              to="tokenomics"
+              to="/"
               onClick={() => setSidebarOpen(false)}
               className="cursor-pointer text-sm xl:text-base flex items-center gap-4 border border-[#47ef47] rounded-full py-2 px-5 bg-[#0d0f11]"
             >
@@ -91,7 +91,7 @@ function Navbar() {
              Home
           </Link>
           <Link
-            to="roadmap"
+            to="/ecosystem"
             onClick={() => setSidebarOpen(false)}
             className="cursor-pointer text-sm xl:text-base"
           >
