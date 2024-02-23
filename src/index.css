@@ -499,6 +499,10 @@ font-size:12px ;
   font-family: "MockFlowFont";
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+ 
   overflow: hidden;
+}
+
+.apexcharts-legend{
+  display: none !important;
 }

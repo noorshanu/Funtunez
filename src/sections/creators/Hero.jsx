@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section className=" mt-8 relative ">
       <img src="images/ring.png" alt=""  className=" h-full sm:h-[800px] absolute left-0 -top-[35%]"/>
-      <div className=" max-w-[1250px] mx-auto relative z-20 px-2 ">
+      <div className=" max-w-[1250px] mx-auto relative z-20 px-2">
         <div className=" flex justify-between flex-col sm:flex-row items-center">
           <div className=" text-white">
             <h1 className=" font-work font-bold text-3xl sm:text-5xl max-w-2xl ">
@@ -21,7 +21,7 @@ function Hero() {
             </div>
           </div>
 
-          <div className='bg-[#47ef474d] rounded-full p-4 sm:mt-0 mt-4 '>
+          <div className='bg-[#47ef474d] rounded-full p-4 blur-md'>
             <img src="images/eco.png" alt="" className=" h-auto  floating relative z-30" />
           </div>
         </div>

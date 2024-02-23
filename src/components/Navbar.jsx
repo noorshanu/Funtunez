@@ -26,14 +26,14 @@ function Navbar() {
               Home
             </Link>
             <Link
-              to="ecosystem"
+              to="/ecosystem"
               onClick={() => setSidebarOpen(false)}
               className="cursor-pointer text-sm xl:text-base"
             >
              Ecosystem
             </Link>
             <Link
-              to="/"
+              to="/creator"
               onClick={() => setSidebarOpen(false)}
               className="cursor-pointer text-sm xl:text-base"
             >
@@ -98,7 +98,7 @@ function Navbar() {
             Ecosystem
           </Link>
           <Link
-            to="about"
+            to="/creator"
             onClick={() => setSidebarOpen(false)}
             className="cursor-pointer text-sm xl:text-base"
           >

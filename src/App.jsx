@@ -1,3 +1,4 @@
+import Creators from "./Pages/Creators";
 import Ecosystem from "./Pages/Ecosystem";
 import Home from "./Pages/Home";
 import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
@@ -11,6 +12,8 @@ function App() {
       
         <Route path="/" element={<Home />} />
         <Route path="/ecosystem" element={<Ecosystem/>} />
+        <Route path="/creator" element={<Creators/>} />
+
      
         
   
