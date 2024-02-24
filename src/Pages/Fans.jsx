@@ -6,6 +6,7 @@ import Hero from "../sections/Fans/Hero";
 import Benifit from "../sections/Fans/Benfits";
 import WhatWe from "../sections/Fans/Whatwedo";
 import Cta from "../components/Cta";
+import Token from "../sections/Fans/Token";
 
 function Fans() {
   return (
@@ -22,6 +23,10 @@ function Fans() {
       </div>
       <div className=" mt-4">
         <WhatWe />
+      </div>
+      <div className=" mt-4">
+        <Token/>
+
       </div>
       <div className=" mt-4">
         <Cta />

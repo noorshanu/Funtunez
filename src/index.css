@@ -120,6 +120,11 @@ body {
 }
 
 /* nft card */
+.nft2 {
+ 
+  border-radius: 100% !important;
+
+}
 
 .nft {
   user-select: none;
