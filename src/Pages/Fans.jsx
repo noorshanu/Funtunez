@@ -1,17 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../sections/Footer";
-import Hero from "../sections/creators/Hero";
-import Eco from "../sections/Ecosystem/Eco";
-import Tokenomic from "../sections/Ecosystem/Tokenomic";
-import Benifit from "../sections/creators/Benifit";
-import WhatWe from "../sections/creators/WhatWe";
+import Hero from "../sections/Fans/Hero";
+
+import Benifit from "../sections/Fans/Benfits";
+import WhatWe from "../sections/Fans/Whatwedo";
 import Cta from "../components/Cta";
 
-function Creators() {
+function Fans() {
   return (
     <>
-      <div className="mt-4">
+     <div className="mt-4">
         <Navbar />
       </div>
 
@@ -32,7 +31,7 @@ function Creators() {
         <Footer />
       </div>
     </>
-  );
+  )
 }
 
-export default Creators;
+export default Fans

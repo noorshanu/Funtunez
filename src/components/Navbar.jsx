@@ -40,7 +40,7 @@ function Navbar() {
            Creators
             </Link>
             <Link
-              to="/"
+              to="/fans"
               onClick={() => setSidebarOpen(false)}
               className="cursor-pointer text-sm xl:text-base"
             >
@@ -105,7 +105,7 @@ function Navbar() {
              Creators
           </Link>
           <Link
-            to="tokenomics"
+            to="/fans"
             onClick={() => setSidebarOpen(false)}
             className="cursor-pointer text-sm xl:text-base"
           >
