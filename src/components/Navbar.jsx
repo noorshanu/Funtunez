@@ -10,13 +10,13 @@ function Navbar() {
     <>
       <nav className="z-[100] bg-secondary lg:bg-transparent">
         <div className=" max-w-[1250px] mx-auto bg-secondary border-[0.5px] border-[#07c301] h-14 lg:h-16 2xl:h-20 rounded-2xl flex justify-between lg:justify-between  gap-8 items-center px-4">
-          <div>
+          <a href="/">
             <img
               src="/images/logo.png"
               className="w-auto h-[20px]  sm:h-[29px] "
               alt=""
             />
-          </div>
+          </a>
           <div className="items-center justify-between gap-8 text-base font-medium text-white hidden lg:flex">
             <Link
               to="/"
