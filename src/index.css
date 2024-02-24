@@ -254,7 +254,11 @@ body {
   font-size: 20rem;
   filter: opacity(0.5);
 }
-
+.white-shadow{
+  -webkit-box-shadow: 3px 1px 9px 9px #47ef47e0;
+  -moz-box-shadow: 3px 1px 9px 9px #47ef47e0;
+  box-shadow: 3px 1px 9px 9px #47ef47e0;
+}
 /* CSS */
 .button-62 {
   background: linear-gradient(to bottom right, #47ef47, #dd6f2b);

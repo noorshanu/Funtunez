@@ -4,7 +4,7 @@ function Whatwedo() {
   return (
     <section className=" pt-6 mb-4">
       <div className=" container-wrapper">
-        <div className=" flex justify-between items-center gap-5">
+        <div className=" flex justify-between items-center gap-5 flex-col sm:flex-row">
           <div className=" max-w-[650px] w-full">
             <img src="images/creat.png" alt="" className=" relative z-50" />
           </div>
