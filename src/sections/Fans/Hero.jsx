@@ -18,7 +18,7 @@ function Hero() {
            
           </div>
 
-          <div className='bg-[#47ef474d] rounded-full p-4 blur-md'>
+          <div className='bg-[#47ef474d] rounded-full p-4 '>
             <img src="images/eco.png" alt="" className=" h-auto  floating relative z-30" />
           </div>
         </div>
