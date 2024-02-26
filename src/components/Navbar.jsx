@@ -13,7 +13,7 @@ function Navbar() {
           <a href="/">
             <img
               src="/images/logo.png"
-              className="w-auto h-[20px]  sm:h-[29px] "
+              className="w-auto h-[35px] sm:h-[55px] "
               alt=""
             />
           </a>
