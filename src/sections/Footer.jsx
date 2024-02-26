@@ -7,7 +7,7 @@ function Footer() {
       <div className="container-wrapper">
         <div className=" grid grid-cols-2 sm:grid-cols-4 justify-evenly items-center sm:items-start gap-8 pb-8">
           <div>
-            <img src="images/foot.png" alt="" className=" h-auto sm:h-[200px] mx-auto" />
+            <img src="images/foot.png" alt="" className=" h-auto  mx-auto" />
       
           </div>
           <div>
