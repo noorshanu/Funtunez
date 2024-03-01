@@ -1,10 +1,9 @@
-import React from "react";
 import Marquee from "react-fast-marquee";
 
 function MarqueSection() {
   return (
-    <>
-      <Marquee>
+    <div>
+      <Marquee play={true} speed={80}>
         <p className=" text-grad p-4">!!!!!!</p>
         <img src=" images/logo.png" alt="" className=" h-[50px] p-4" />
         <p className=" text-grad p-4">!!!!!!</p>
@@ -31,7 +30,7 @@ function MarqueSection() {
         <p className="font-64 text-grad p-4 capitalize">Exclusive fan tokens</p>
         <p className=" text-grad p-4">!!!!!!</p>
       </Marquee>
-    </>
+    </div>
   );
 }
 

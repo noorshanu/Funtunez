@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -121,14 +121,12 @@ body {
 
 /* nft card */
 .nft2 {
- 
   border-radius: 100% !important;
-
 }
 
 .nft {
   user-select: none;
-  
+
   /* margin: 5rem auto; */
   border: 1px solid #ffffff22;
   background-color: #282c34;
@@ -254,7 +252,7 @@ body {
   font-size: 20rem;
   filter: opacity(0.5);
 }
-.white-shadow{
+.white-shadow {
   -webkit-box-shadow: 3px 1px 9px 9px #47ef47e0;
   -moz-box-shadow: 3px 1px 9px 9px #47ef47e0;
   box-shadow: 3px 1px 9px 9px #47ef47e0;
@@ -268,7 +266,6 @@ body {
   display: inline-block;
   font-family: "Work Sans", sans-serif;
 
-
   outline: transparent;
 
   text-align: center;
@@ -279,7 +276,7 @@ body {
   touch-action: manipulation;
   white-space: nowrap;
 }
-.button-62:hover{
+.button-62:hover {
   background: transparent;
   border: 1px solid #47ef47;
 }
@@ -295,7 +292,6 @@ body {
     -0.125rem -0.125rem 1rem rgba(25, 236, 5, 0.5),
     0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 }
-
 
 .floating {
   animation-name: floating;
@@ -315,10 +311,8 @@ body {
   }
 }
 
-
 .swiper {
   margin: auto;
-
 }
 
 .swiper-slide {
@@ -330,17 +324,13 @@ body {
   color: #fff;
 }
 
-
-
 .swiper-bg {
   position: relative;
   border: 2px solid transparent;
   background: linear-gradient(71deg, #08050950, #1a171c, #080509af);
   background-clip: padding-box;
   border-radius: 45px;
- 
 }
-
 
 .container-card {
   position: relative;
@@ -376,7 +366,7 @@ body {
   background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   height: 18px;
   width: 18px;
   background: #47ef47;
@@ -384,18 +374,20 @@ body {
   border-radius: 100px;
 }
 
-.swiper-button-next , .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
   background-color: #04181c;
   border: 1px solid #3da077;
   border-radius: 100px;
   padding: 5px;
-height: 50px;
-width: 50px;
-font-size:12px ;
+  height: 50px;
+  width: 50px;
+  font-size: 12px;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after{
-  font-size:22px ;
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 22px;
   color: #fff;
 }
 
@@ -404,7 +396,6 @@ font-size:12px ;
   --surface-color: #fff;
   --curve: 40;
 }
-
 
 .cards {
   display: grid;
@@ -508,10 +499,10 @@ font-size:12px ;
   font-family: "MockFlowFont";
   display: -webkit-box;
   -webkit-box-orient: vertical;
- 
+
   overflow: hidden;
 }
 
-.apexcharts-legend{
+.apexcharts-legend {
   display: none !important;
 }

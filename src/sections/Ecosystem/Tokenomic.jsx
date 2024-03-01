@@ -38,12 +38,11 @@ function Tokenomic() {
         id="chart"
         className=" container-wrapper rounded-2xl bg-secondary px-6 py-4 my-6"
       >
-           <div>
-        <h1 className=' text-center text-2xl sm:text-4xl font-work font-bold font-64 uppercase text-grad mb-8 mt-2 ' >
-        Tokonomics
-        </h1>
-       
-      </div>
+        <div>
+          <h1 className=" text-center text-2xl sm:text-4xl font-work font-bold font-64 uppercase text-grad mb-8 mt-2 ">
+            Tokonomics
+          </h1>
+        </div>
         <div className=" flex justify-center items-center gap-6 flex-col sm:flex-row ">
           <div className="max-w-[600px] sm:max-w-[500px] sm:w-full w-auto">
             <ReactApexChart
@@ -53,60 +52,34 @@ function Tokenomic() {
             />
           </div>
           <div id="html-dist">
-            <div class="Tokenomics-module--token_content--856c1 flex justify-center items-center flex-col sm:flex-row gap-[4rem]">
-              <ul class="  ">
-                <li class="flex-col flex  bg-primary rounded-md py-2 px-4  my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+            <div className="Tokenomics-module--token_content--856c1 flex justify-center items-center flex-col sm:flex-row gap-[4rem]">
+              <ul className="  ">
+                <li className="flex-col flex  bg-primary rounded-md py-2 px-4  my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-                <li class="flex-col flex  bg-primary rounded-md py-2 px-4  my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md py-2 px-4  my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-                <li class="flex-col flex  bg-primary rounded-md py-2 px-4   my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md py-2 px-4   my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-            
               </ul>
               <ul>
-              <li class="flex-col flex  bg-primary rounded-md py-2 px-4   my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md py-2 px-4   my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-                <li class="flex-col flex  bg-primary rounded-md py-2 px-4   my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md py-2 px-4   my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-                <li class="flex-col flex  bg-primary rounded-md py-2 px-4   my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md py-2 px-4   my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-               
               </ul>
             </div>
           </div>

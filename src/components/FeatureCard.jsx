@@ -1,26 +1,27 @@
-import React from "react";
-
 function FeatureCard({ IconSrc, Title, Para, className }) {
   return (
-    <section className={`flex flex-col justify-center antialiased bg-gray-50 text-gray-600 p-4 ${className}`}>
+    <section
+      id="feature-card"
+      className={`opacity-0 flex flex-col justify-center antialiased bg-gray-50 text-gray-600 p-4 ${className}`}
+    >
       <div className="relative nft  h-full  sm:h-[400px]  rounded-lg shadow-lg p-5 overflow-hidden border border-[#47ef47]">
-        <svg
-          class="absolute top-0 right-0"
+        {/* <svg
+          className="absolute top-0 right-0"
           width="158"
           height="119"
           aria-hidden="true"
         >
           <defs>
             <linearGradient x1="50%" y1="0%" x2="50%" y2="96.22%" id="a">
-              <stop stop-color="#47ef47" stop-opacity=".88" offset="0%" />
-              <stop stop-color="#47ef47" stop-opacity=".24" offset="100%" />
+              <stop stopColor="#47ef47" stopOpacity=".88" offset="0%" />
+              <stop stopColor="#47ef47" stopOpacity=".24" offset="100%" />
             </linearGradient>
           </defs>
           <g
             transform="translate(-719 -96)"
             stroke="url(#a)"
             fill="none"
-            fill-rule="evenodd"
+            fillRule="evenodd"
           >
             <path d="M802.959 69.706c.987-31.014 27.104-55.35 58.333-54.356 31.23.994 55.747 26.94 54.76 57.954-.987 31.013-27.103 55.349-58.333 54.356-31.23-.994-55.747-26.94-54.76-57.954Z" />
             <path d="M859.16 15.329c32.617-.2 59.212 24.794 59.4 55.824.19 31.028-26.097 56.343-58.714 56.543-32.617.2-59.212-24.793-59.4-55.823-.19-31.03 26.097-56.346 58.714-56.544Z" />
@@ -67,14 +68,14 @@ function FeatureCard({ IconSrc, Title, Para, className }) {
             <path d="M723.862 61.196c5.945-78.2 71.49-136.977 146.403-131.282 74.91 5.695 130.818 73.705 124.874 151.905-5.944 78.2-71.491 136.976-146.402 131.282-74.912-5.696-130.82-73.705-124.875-151.905Z" />
             <path d="M859.505-70.5c78.428 0 142.005 63.578 142.005 142.005 0 78.428-63.577 142.005-142.005 142.005-78.427 0-142.005-63.577-142.005-142.005C717.5-6.922 781.078-70.5 859.505-70.5Z" />
           </g>
-        </svg>
+        </svg> */}
 
         <div className="relative pb-4 ">
           <img src={IconSrc} alt="" className=" h-[200px] w-[200px]" />
           <div className="text-2xl font-bold uppercase text-green-400 tracking-widest mb-2 text-white pt-4">
             {Title}
           </div>
-          {/* <h3 class="text-2xl font-extrabold text-indigo-50 leading-snug mb-2 text-white">
+          {/* <h3 className="text-2xl font-extrabold text-indigo-50 leading-snug mb-2 text-white">
                   The easy way to scan your documents
                 </h3> */}
           <p className="text-indigo-200 text-white text-base py-2">{Para}</p>

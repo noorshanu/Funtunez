@@ -5,10 +5,11 @@ import { Navigation } from "swiper/modules";
 import Newscard from "../components/Newscard";
 
 import SliderNavigationButton from "../components/SliderNavigationButton";
-
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import gsap from "gsap";
 
 const data = [
-
   {
     title:
       "Empowering The Crypto Community: Commendation For The Crypto Express’ Journey",
@@ -17,7 +18,7 @@ const data = [
     Disc: "you are looking for a reliable and authentic crypto service, look no further than The Crypto Express. They have everything you need to succeed in the crypto space: education, ",
     Auther: "Bitcoinik ",
     Time: "crypto media house",
-    IconUrl:'https://bitcoinik.com/wp-content/uploads/2020/04/logo22.png.webp',
+    IconUrl: "https://bitcoinik.com/wp-content/uploads/2020/04/logo22.png.webp",
     link: "https://bitcoinik.com/empowering-the-crypto-community-a-commendation-for-the-crypto-express-journey/",
   },
 
@@ -28,11 +29,10 @@ const data = [
     Disc: "The Crypto express content is unbiased, easy to understand, and reliable. They also have a great community of crypto enthusiasts who want to succeed in this space. I highly recommend The Crypto Express  ",
     Auther: "Binance Feed",
     Time: "Top Crypto exchange",
-    IconUrl:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA3ElEQVR4AcWXAQYDMRREF9DTBEBF7Un2JFWof6ZaeqvaA7TBp4xh2C9mGdjEviebJPlL5Tne7TkSi+NJ+DcTFjgkLHBIWOCQsMAhYYKjxHz4nhES8+CXTF2CwO8K/u8rJR5nBK4jHwVXEvmNrolSgsC1BMIlcEsAk9hJWx9ZqUTCSdsmJhwFNQZPyDFyI6BG3r2SERwuhxrh2Z9IMDgwgsC1BMJBYlVwSPgF7L/APwnry7DXl6Ee6rkbkYAXtmI9P/yHkf849l9I/Fcy/6XUfy33Fyb+0sxfnLrK8x8BCDupxYlOYwAAAABJRU5ErkJggg==",
+    IconUrl:
+      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA3ElEQVR4AcWXAQYDMRREF9DTBEBF7Un2JFWof6ZaeqvaA7TBp4xh2C9mGdjEviebJPlL5Tne7TkSi+NJ+DcTFjgkLHBIWOCQsMAhYYKjxHz4nhES8+CXTF2CwO8K/u8rJR5nBK4jHwVXEvmNrolSgsC1BMIlcEsAk9hJWx9ZqUTCSdsmJhwFNQZPyDFyI6BG3r2SERwuhxrh2Z9IMDgwgsC1BMJBYlVwSPgF7L/APwnry7DXl6Ee6rkbkYAXtmI9P/yHkf849l9I/Fcy/6XUfy33Fyb+0sxfnLrK8x8BCDupxYlOYwAAAABJRU5ErkJggg==",
     link: "https://www.binance.com/en-IN/feed/post/3315653283282",
   },
-
-
 
   {
     title: "BlackRock expands crypto strategy with  application",
@@ -64,62 +64,88 @@ const data = [
 ];
 
 function LatestNews() {
- 
+  const container = useRef(null);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({
+        delay: 0.2,
+        scrollTrigger: {
+          trigger: "#section",
+          toggleActions: "play pause none reset",
+          start: "top 60%",
+        },
+      });
+
+      tl.fromTo("#title", { x: -60, opacity: 0 }, { x: 0, opacity: 1 })
+        .fromTo(
+          "#line",
+          { scaleX: 0 },
+          { scaleX: 1, transformOrigin: "left" },
+          "<"
+        )
+        .fromTo("#cards", { x: 100, opacity: 0 }, { x: 0, opacity: 1 });
+    },
+    { scope: container }
+  );
 
   return (
-    <section className="relative bg-secondary py-12">
-      <div className="container-wrapper "> 
+    <section ref={container} className="relative bg-secondary py-12">
+      <div id="section" className="container-wrapper">
+        <div className="my-3 w-fit">
+          <h1
+            id="title"
+            className="text-grad text-4xl font-work font-bold font-64"
+          >
+            Our Blogs
+          </h1>
+          <div id="line" className="bg-white h-[3px] w-full my-2">
+            {" "}
+          </div>
+        </div>
 
-      
-       <div className=" my-3">
-              <h1 className="text-grad text-4xl font-work font-bold font-64">
-              Our Blogs
-              </h1>
-              <div className="bg-white h-[3px] w-[200px] sm:w-[330px] my-2"> </div>
-            </div>
+        <div id="cards" className="mt-3 mb-4">
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            className="py-5 [&_.swiper-slide]:!h-auto"
+            modules={[Navigation]}
+            navigation={{
+              nextEl: ".nextEl",
+              prevEl: ".prevEl",
+            }}
+            breakpoints={{
+              100: {
+                slidesPerView: 1,
+              },
+              500: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
+          >
+            {data.map((item, i) => (
+              <SwiperSlide key={i}>
+                <Newscard
+                  title={item.title}
+                  imgUrl={item.imgUrl}
+                  Disc={item.Disc}
+                  Auther={item.Auther}
+                  Time={item.Time}
+                  IconUrl={item.IconUrl}
+                  link={item.link}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
 
-      <div className="mt-3 mb-4">
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          className="py-5 [&_.swiper-slide]:!h-auto"
-          modules={[Navigation]}
-          navigation={{
-            nextEl: ".nextEl",
-            prevEl: ".prevEl",
-          }}
-          breakpoints={{
-            100: {
-              slidesPerView: 1,
-            },
-            500: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-          }}
-        >
-          {data.map((item, i) => (
-            <SwiperSlide key={i}>
-              <Newscard
-                title={item.title}
-                imgUrl={item.imgUrl}
-                Disc={item.Disc}
-                Auther={item.Auther}
-                Time={item.Time}
-                IconUrl={item.IconUrl}
-                link={item.link}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-
-      <div className="flex items-center justify-center space-x-5">
-        <SliderNavigationButton className="prevEl rotate-180" />
-        <SliderNavigationButton className="nextEl" />
-      </div>
+        <div className="flex items-center justify-center space-x-5">
+          <SliderNavigationButton className="prevEl rotate-180" />
+          <SliderNavigationButton className="nextEl" />
+        </div>
       </div>
     </section>
   );

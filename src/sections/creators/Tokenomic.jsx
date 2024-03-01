@@ -47,63 +47,35 @@ function Tokenomic() {
             />
           </div>
           <div id="html-dist">
-            <div class="Tokenomics-module--token_content--856c1">
-              <ul class=" grid grid-rows-4  ">
-                <li class="flex-col flex  bg-primary rounded-md p-2  my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+            <div className="Tokenomics-module--token_content--856c1">
+              <ul className=" grid grid-rows-4  ">
+                <li className="flex-col flex  bg-primary rounded-md p-2  my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-                <li class="flex-col flex  bg-primary rounded-md p-2  my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md p-2  my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-                <li class="flex-col flex  bg-primary rounded-md p-2  my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md p-2  my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-                <li class="flex-col flex  bg-primary rounded-md p-2  my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md p-2  my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-                <li class="flex-col flex  bg-primary rounded-md p-2  my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md p-2  my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-                <li class="flex-col flex  bg-primary rounded-md p-2  my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md p-2  my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
-                <li class="flex-col flex  bg-primary rounded-md p-2  my-2">
-                  <span class="text-white">
-                    Pre-Seed Round
-                  </span>
-                  <span class="text-white">
-                    Supply: 4,550,000
-                  </span>
+                <li className="flex-col flex  bg-primary rounded-md p-2  my-2">
+                  <span className="text-white">Pre-Seed Round</span>
+                  <span className="text-white">Supply: 4,550,000</span>
                 </li>
               </ul>
             </div>

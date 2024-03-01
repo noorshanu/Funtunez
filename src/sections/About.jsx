@@ -1,23 +1,56 @@
-import React from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
 
 function About() {
+  const container = useRef(null);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container.current,
+          toggleActions: "play reset resume pause",
+          start: "top center",
+        },
+      });
+
+      tl.fromTo("#nft", { x: -100, opacity: 0 }, { x: 0, opacity: 1 })
+        .fromTo(
+          "#right h1, #right p, #right button",
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, stagger: 0.4 }
+        )
+        .fromTo(
+          "#line",
+          { width: 0 },
+          { width: "100%", ease: "power3.in" },
+          "<"
+        );
+    },
+    { scope: container }
+  );
+
   return (
-    <section className="bg-secondary  py-12">
+    <section ref={container} className="bg-secondary  py-12">
       <div className="container-wrapper ">
-        <div className=" flex flex-col sm:flex-row justify-between gap-4 items-center">
-          <div className="nft border-[#112411] border p-4 relative bg-grad">
-            <img
-              src="images/vision.png"
-              alt=""
-              className=" rounded-2xl relative z-[100] h-auto sm:h-[400px] floating "
-            />
+        <div className="flex flex-col sm:flex-row justify-between gap-4 items-center">
+          <div id="nft">
+            <div className="nft border-[#112411] border p-4 relative bg-grad">
+              <img
+                src="images/vision.png"
+                alt=""
+                className=" rounded-2xl relative z-[100] h-auto sm:h-[400px] floating "
+              />
+            </div>
           </div>
-          <div className=" max-w-xl ">
-            <div className=" my-3">
+
+          <div id="right" className="max-w-xl">
+            <div className="my-3 w-fit">
               <h1 className="text-grad text-2xl sm:text-4xl font-work font-bold font-64 uppercase">
                 Our Vision{" "}
               </h1>
-              <div className="bg-white h-[3px] w-[240px] sm:w-[359px] my-2"> </div>
+              <div id="line" className="bg-white h-[3px] w-full my-2"></div>
             </div>
             <p className=" text-white text-lg">
               Revolutionizing the interaction between creators and fans. At
