@@ -1,49 +1,8 @@
-import { useGSAP } from "@gsap/react";
 import FeatureCard from "../components/FeatureCard";
-import { useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Collab() {
-  const container = useRef(null);
-
-  useGSAP(
-    () => {
-      const tl = gsap.timeline({
-        scrollTrigger: { trigger: "header" },
-      });
-
-      ScrollTrigger.batch("#feature-card", {
-        interval: 0.1,
-        start: "top center",
-        onEnter: (batch) =>
-          gsap.fromTo(
-            batch,
-            { y: -30, opacity: 0 },
-            { opacity: 1, y: 0, autoAlpha: 1, stagger: 0.3, overwrite: true }
-          ),
-        // onLeave: (batch) => gsap.set(batch, { autoAlpha: 0, overwrite: true }),
-        // onEnterBack: (batch) =>
-        //   gsap.fromTo(
-        //     batch,
-        //     { y: -30, opacity: 0 },
-        //     { opacity: 1, y: 0, autoAlpha: 1, stagger: 0.4, overwrite: true }
-        //   ),
-        onLeaveBack: (batch) =>
-          gsap.to(batch, { opacity: 0, y: -30, autoAlpha: 0, overwrite: true }),
-      });
-
-      tl.fromTo(
-        "header h1",
-        { y: -60, opacity: 0 },
-        { y: 0, opacity: 1 }
-      ).fromTo("#line", { scaleX: 0 }, { scaleX: 1 }, "<=-.3");
-    },
-    { scope: container }
-  );
-
   return (
-    <section ref={container} className=" bg-secondary py-12">
+    <section className=" bg-secondary py-12">
       <div className="container-wrapper">
         <header className="mb-8">
           <h1 className="text-grad text-3xl sm:text-4xl font-work font-bold font-64 text-center mb-4">

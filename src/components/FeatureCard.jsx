@@ -2,7 +2,7 @@ function FeatureCard({ IconSrc, Title, Para, className }) {
   return (
     <section
       id="feature-card"
-      className={`opacity-0 flex flex-col justify-center antialiased bg-gray-50 text-gray-600 p-4 ${className}`}
+      className={`flex flex-col justify-center antialiased bg-gray-50 text-gray-600 p-4 ${className}`}
     >
       <div className="relative nft  h-full  sm:h-[400px]  rounded-lg shadow-lg p-5 overflow-hidden border border-[#47ef47]">
         {/* <svg

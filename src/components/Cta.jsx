@@ -1,32 +1,6 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { useRef } from "react";
-
 function Cta() {
-  const container = useRef(null);
-
-  useGSAP(
-    () => {
-      gsap.fromTo(
-        "h2, p, button",
-        { y: -30, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.4,
-          scrollTrigger: {
-            trigger: "#box",
-            toggleActions: "play pause restart reset",
-            start: "top 60%",
-          },
-        }
-      );
-    },
-    { scope: container }
-  );
-
   return (
-    <section ref={container} className="bg-primary py-12">
+    <section className="bg-primary py-12">
       <div className="container-wrapper">
         <div
           id="box"

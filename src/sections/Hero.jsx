@@ -1,51 +1,6 @@
-import { useGSAP } from "@gsap/react";
-import MarqueSection from "../components/MarqueSection";
-import { useContext, useEffect, useRef } from "react";
-import gsap from "gsap";
-import { TimelineContext } from "../state/TimelineContext";
-
 function Hero() {
-  const container = useRef(null);
-  const { addTimeline } = useContext(TimelineContext);
-  const timeline = useRef(null);
-
-  useGSAP(
-    () => {
-      const tl = gsap.timeline({
-        delay: 2,
-        paused: true,
-        scrollTrigger: {
-          trigger: container.current,
-          start: "top center",
-          end: "bottom 70%",
-          toggleActions: "play pause resume reset",
-        },
-      });
-
-      addTimeline(tl);
-
-      tl.fromTo(
-        "#left >*:not(#btns)",
-        { opacity: 0, y: -20 },
-        { opacity: 1, y: 0, stagger: 0.4 }
-      )
-        .fromTo(
-          "#btns > *",
-          { y: -20, opacity: 0 },
-          { y: 0, opacity: 1, stagger: 0.2 }
-        )
-        .fromTo(
-          "#hero-img",
-          { scale: 0.7, opacity: 0 },
-          { scale: 1, opacity: 1 },
-          0.5
-        );
-    },
-    { scope: container }
-  );
-
   return (
-    <section ref={container} className="mt-8 relative">
+    <section className="mt-8 relative">
       <img
         src="images/ring.png"
         alt=""
@@ -96,9 +51,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div>
-        <MarqueSection />
-      </div>
+      <div></div>
     </section>
   );
 }

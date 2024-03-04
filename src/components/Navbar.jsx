@@ -102,66 +102,6 @@ function Navbar() {
           </button>
         </div>
       </nav>
-
-      <div
-        className={`fixed top-0 right-0 w-[16rem] h-screen z-[1000] bg-secondary border-l-4 border-primary pt-6 px-8 transition-all duration-300 ${
-          !sidebarOpen ? "translate-x-[16rem]" : "translate-x-0"
-        }`}
-      >
-        <div className="flex items-center justify-between mb-8">
-          <img src="/images/logo.png" className="w-full max-w-[9rem]" alt="" />
-
-          <button
-            className="text-white text-2xl"
-            onClick={() => setSidebarOpen(false)}
-          >
-            <IoClose />
-          </button>
-        </div>
-
-        <div className="space-y-5 flex flex-col text-left items-start text-white font-medium">
-          <Link
-            to="contact"
-            onClick={() => setSidebarOpen(false)}
-            className="cursor-pointer text-sm xl:text-base"
-          >
-            Home
-          </Link>
-          <Link
-            to="/ecosystem"
-            onClick={() => setSidebarOpen(false)}
-            className="cursor-pointer text-sm xl:text-base"
-          >
-            Ecosystem
-          </Link>
-          <Link
-            to="/creator"
-            onClick={() => setSidebarOpen(false)}
-            className="cursor-pointer text-sm xl:text-base"
-          >
-            Creators
-          </Link>
-          <Link
-            to="/fans"
-            onClick={() => setSidebarOpen(false)}
-            className="cursor-pointer text-sm xl:text-base"
-          >
-            Fans
-          </Link>
-          <Link
-            to="tokenomics"
-            onClick={() => setSidebarOpen(false)}
-            className="cursor-pointer text-sm xl:text-base flex items-center gap-4 border border-[#47ef47] rounded-full py-2 px-5 bg-[#0d0f11]"
-          >
-            <FaTelegram className=" text-2xl" />
-            Telegram
-          </Link>
-        </div>
-      </div>
-
-      <div
-        className={`black-screen z-[900] ${sidebarOpen ? "show" : ""}`}
-      ></div>
     </>
   );
 }

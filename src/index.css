@@ -5,8 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
   background-color: #04181c;
+  overflow-x: hidden;
 }
 
 .font-work {
@@ -505,4 +507,18 @@ body {
 
 .apexcharts-legend {
   display: none !important;
+}
+
+/* bar-loader */
+
+.reveal-from-left {
+  /* background-image: linear-gradient(to right, red, blue); */
+  transform: translateX(-100%);
+  animation: slidetounlock var(--speed) ease forwards;
+}
+
+@keyframes slidetounlock {
+  100% {
+    transform: translateX(0);
+  }
 }

@@ -1,35 +1,7 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import { useRef } from "react";
 
 function About() {
   const container = useRef(null);
-
-  useGSAP(
-    () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: container.current,
-          toggleActions: "play reset resume pause",
-          start: "top center",
-        },
-      });
-
-      tl.fromTo("#nft", { x: -100, opacity: 0 }, { x: 0, opacity: 1 })
-        .fromTo(
-          "#right h1, #right p, #right button",
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, stagger: 0.4 }
-        )
-        .fromTo(
-          "#line",
-          { width: 0 },
-          { width: "100%", ease: "power3.in" },
-          "<"
-        );
-    },
-    { scope: container }
-  );
 
   return (
     <section ref={container} className="bg-secondary  py-12">

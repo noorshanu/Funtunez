@@ -5,9 +5,6 @@ import { Navigation } from "swiper/modules";
 import Newscard from "../components/Newscard";
 
 import SliderNavigationButton from "../components/SliderNavigationButton";
-import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
-import gsap from "gsap";
 
 const data = [
   {
@@ -64,33 +61,8 @@ const data = [
 ];
 
 function LatestNews() {
-  const container = useRef(null);
-
-  useGSAP(
-    () => {
-      const tl = gsap.timeline({
-        delay: 0.2,
-        scrollTrigger: {
-          trigger: "#section",
-          toggleActions: "play pause none reset",
-          start: "top 60%",
-        },
-      });
-
-      tl.fromTo("#title", { x: -60, opacity: 0 }, { x: 0, opacity: 1 })
-        .fromTo(
-          "#line",
-          { scaleX: 0 },
-          { scaleX: 1, transformOrigin: "left" },
-          "<"
-        )
-        .fromTo("#cards", { x: 100, opacity: 0 }, { x: 0, opacity: 1 });
-    },
-    { scope: container }
-  );
-
   return (
-    <section ref={container} className="relative bg-secondary py-12">
+    <section className="relative bg-secondary py-12">
       <div id="section" className="container-wrapper">
         <div className="my-3 w-fit">
           <h1

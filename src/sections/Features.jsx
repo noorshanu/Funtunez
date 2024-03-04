@@ -1,36 +1,8 @@
-import { useGSAP } from "@gsap/react";
 import Teams from "./Teams";
-import { useRef } from "react";
-import gsap from "gsap";
 
 function Features() {
-  const container = useRef(null);
-
-  useGSAP(
-    () => {
-      const tl = gsap.timeline({
-        delay: 0.2,
-        scrollTrigger: {
-          trigger: container.current,
-          toggleActions: "play pause resume reset",
-          start: "top 60%",
-          end: `bottom top`,
-        },
-      });
-
-      tl.fromTo(
-        "#header > *:not(#line)",
-        { y: 60, opacity: 0 },
-        { y: 0, opacity: 1, stagger: 0.4 }
-      )
-        .fromTo("#line", { scaleX: 0 }, { scaleX: 1, ease: "back" }, "<")
-        .fromTo("#teams", { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
-    },
-    { scope: container }
-  );
-
   return (
-    <section ref={container} className=" relative py-10 ">
+    <section className="relative py-10">
       <img
         src="images/rightring.png"
         alt=""
