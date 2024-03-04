@@ -17,7 +17,10 @@ export const TimelineProvider = ({ children }) => {
   };
 
   const resumeAllTimelines = () => {
-    timelines.forEach((timeline) => timeline.play());
+    timelines.forEach((timeline) => {
+      timeline.play();
+      timeline.call(() => timeline.play());
+    });
   };
 
   return (

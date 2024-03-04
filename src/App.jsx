@@ -21,7 +21,7 @@ function App() {
     setInterval(() => {
       setLoading(false);
     }, 3000);
-  }, []);
+  }, [loading]);
 
   useEffect(() => {
     if (loading) {
