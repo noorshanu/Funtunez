@@ -1,28 +1,27 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useContext, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import FloatingNavbar from "./FloatingNavbar";
 import { TimelineContext } from "../state/TimelineContext";
 
 function HeroAnimated() {
   const container = useRef(null);
   const { addTimeline } = useContext(TimelineContext);
+  const tlMobile = useRef();
 
   useGSAP(
     () => {
       let mm = gsap.matchMedia();
 
-      const tlMobile = gsap.timeline({
+      tlMobile.current = gsap.timeline({
         scrollTrigger: {
           trigger: container.current,
           toggleActions: "play pause restart restart",
         },
       });
 
-      addTimeline(tlMobile);
-
       mm.add("(max-width:1023px)", () => {
-        tlMobile.fromTo(
+        tlMobile.current.fromTo(
           "#left h1, #left p, #left button, #hero-img",
           { opacity: 0, scale: 0.8 },
           { opacity: 1, stagger: 0.2, scale: 1 }
@@ -122,6 +121,10 @@ function HeroAnimated() {
     },
     { scope: container }
   );
+
+  useEffect(() => {
+    addTimeline(tlMobile.current);
+  }, [tlMobile.current]);
 
   return (
     <div ref={container} className="">
