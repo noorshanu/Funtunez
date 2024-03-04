@@ -12,21 +12,21 @@ function HeroAnimated() {
     () => {
       let mm = gsap.matchMedia();
 
-      mm.add("(max-width:1023px)", () => {
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: container.current,
-            toggleActions: "play pause restart restart",
-          },
-        });
+      const tlMobile = gsap.timeline({
+        scrollTrigger: {
+          trigger: container.current,
+          toggleActions: "play pause restart restart",
+        },
+      });
 
-        tl.fromTo(
+      addTimeline(tlMobile);
+
+      mm.add("(max-width:1023px)", () => {
+        tlMobile.fromTo(
           "#left h1, #left p, #left button, #hero-img",
           { opacity: 0, scale: 0.8 },
           { opacity: 1, stagger: 0.2, scale: 1 }
         );
-
-        addTimeline(tl);
       });
 
       mm.add("(min-width:1024px)", () => {
