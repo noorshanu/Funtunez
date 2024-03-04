@@ -24,13 +24,11 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (loading === true) {
+    if (loading) {
       pauseAllTimelines();
       document.body.style.height = window.innerHeight + "px";
       document.body.style.overflowY = "hidden";
-    }
-
-    if (loading === false) {
+    } else {
       resumeAllTimelines();
       document.body.classList.remove("hide-scrollbar");
       document.body.style.height = "unset";

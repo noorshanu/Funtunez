@@ -14,7 +14,6 @@ function HeroAnimated() {
 
       mm.add("(max-width:1023px)", () => {
         const tl = gsap.timeline({
-          delay: 0.4,
           scrollTrigger: {
             trigger: container.current,
             toggleActions: "play pause restart restart",
